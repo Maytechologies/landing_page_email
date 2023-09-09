@@ -1,0 +1,11 @@
+Video 17 - Aplicar logica con select and insert en MSQL para evitar correos repetidos
+
+**REQUERIMIENTOS**
+
+  Se necesita desarrollar evento crear y editar usuario en el modulo MANT DE USUARIOS
+
+  - Models 
+  - Controller
+  - Vista
+  - Notificacion Swealert
+  

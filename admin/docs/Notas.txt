@@ -1,0 +1,54 @@
+Video 20 - Creación de estructura de carpetas del proyecto
+           registros de archivos .php y .js que corresponden a cada carpeta estructurada
+           adaptacion del template fiva facilitado por el instructor 
+           alteracion de la tabla de mt_usuario en base de datos, donde se agregan campos rol_id y pass 
+           en el proyecto frontend se modifica en models la funcion registrar_correo agregando como parametros
+           rol_id y como valor predeterminado 1.
+
+
+video 21 - * Creamos el codigo de conexion con DB 
+           * Si recibimos desde View un POST con Array ["enviar]
+             Capturamos el valor de correo y password
+           * Codigo del Modelo Usuario donde Verificamos la existencia de un correo 
+             aplicando condiciones.
+
+Video 22 - * Adaptamos el index.php (login), con etiquetas name como tambien las id necesarias para 
+             poner en marcha el modulo de login user
+           * Se corrigen detalle que no permiten el acceso limpio al DashBoard
+
+           * Se corrigen errores del codigo en la carpeta config->conexion
+
+Video 23 - * Configuramos el mensaje de alerta por campos incorrectos o vacios en el formulario de login
+           * Para lograr esto utilizamos codigo de un componente del template Fiva
+
+Video 24 - * Creamos una carpeta dentro view->HTML posterior dentro de HTML-logout.php, en este archivo
+              desarrollamos el codigo que nos ayudara a desdtruir la session_start.
+           * Ubicamos el index.php de la carpeta home una vez alli ubicamos el elemento logout y direccionamos
+             el vinculo asi el archivo logout.php
+
+Video 25 - * Se termina de maquetar el template del Dashboard Admin, donde solo dejamos los elemento y etiquetas HTML 
+             que amerita nuestro proyecto.
+
+Video 26 - * Se divide las sesiones del DashBoard en varios archivos dentro de la carpeta HTML
+
+
+Video 27 - * 
+
+
+"SELECT 
+tk.tick_id,
+tk.usu_id,
+tk.cat_id,
+tk.tick_titulo,
+tk.tick_descrip,
+usr.usu_nom,
+usr.usu_ape,
+ctb.cat_nom
+
+FROM tm_ticket as tk
+
+INNER JOIN tm_categoria as ctg ON tk.cat_id = ctg.cat_id
+INNER JOIN tm_usuario as usr ON tk.usu_id = usr.usu_id
+
+WHERE
+tk.est = 1 AND usr.usu.id=?;
